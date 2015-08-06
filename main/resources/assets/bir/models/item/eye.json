@@ -1,8 +1,8 @@
 {
-    "parent": "builtin/generated",
+    "parent": "bir:builtin/generated",
     "textures": {
-        "layer0": "BiR:items/eye"
-    }
+        "layer0": "bir:items/eye"
+    },
     "display": {
         "thirdperson": {
             "rotation": [ -90, 0, 0 ],

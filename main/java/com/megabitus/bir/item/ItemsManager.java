@@ -20,7 +20,7 @@ public class ItemsManager {
         
     }
     public static void register(){
-    	GameRegistry.registerItem(eye, "eye");
+    	GameRegistry.registerItem(eye, eye.getUnlocalizedName().substring(5));
     }
     public static void registerRenders(){
     	registerRender(eye);
