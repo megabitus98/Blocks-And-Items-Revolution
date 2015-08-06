@@ -7,10 +7,6 @@ import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-/**
- * Created by Megabitus on 8/11/2014 and hour 10.
- */
-
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ItemsManager {
     public static Item eye;
@@ -25,7 +21,7 @@ public class ItemsManager {
     public static void registerRenders(){
     	registerRender(eye);
     }
-    public static void registerRender(Item item){
+    private static void registerRender(Item item){
     	Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
     }
 }
